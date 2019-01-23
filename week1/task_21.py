@@ -1,4 +1,6 @@
 h = int(input())
 a = int(input())
 b = int(input())
-print((h-a)//(a-b) + (h-a)%(a-b) + 1)
+h = h - b - 1
+steps = (h // (a - b) + ((a - b) // (a - b)))
+print(steps)
