@@ -1,6 +1,5 @@
 h = int(input())
 a = int(input())
 b = int(input())
-h = h - b - 1
-steps = (h // (a - b) + ((a - b) // (a - b)))
+steps = ((h - b - 1) // (a - b) + 1)
 print(steps)
